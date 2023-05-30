@@ -141,7 +141,7 @@ class Main:
 			elif "www.facebook.com" in response.json()["error_msg"]:
 				print("\r  '\033[1;32m'    [SAMI-OK🌻] %s | %s\033[0;97m         "%(uid, pw))
 				self.ok.append("%s|%s"%(uid, pw))
-				open("ok.txt","a").write("  * --> %s|%s\n"%(uid, pw))
+				open("cp.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
 			else:
 				continue
